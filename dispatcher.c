@@ -51,8 +51,8 @@ int main( int argc , char *argv[] )
         // Prepare the file descriptors as args to Amal
         snprintf( arg1 , 20 , "%d" , KDCToAmal[ READ_END ] ) ;
         snprintf( arg2 , 20 , "%d" , AmalToKDC[ WRITE_END ] ) ;
-        snprintf( arg1 , 20 , "%d" , BasimToAmal[ READ_END ] ) ;
-        snprintf( arg2 , 20 , "%d" , AmalToBasim[ WRITE_END ] ) ;
+        snprintf( arg3 , 20 , "%d" , BasimToAmal[ READ_END ] ) ;
+        snprintf( arg4 , 20 , "%d" , AmalToBasim[ WRITE_END ] ) ;
         
         // Now, Start Amal
         char * cmnd = "./amal/amal" ;
